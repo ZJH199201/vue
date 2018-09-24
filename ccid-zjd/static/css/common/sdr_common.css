@@ -1,0 +1,169 @@
+/* 作者：苏东染
+用于自己页面的一些散边公共样式 */
+
+/* 页面红字展示 */
+.btnbox-title{
+    float:left;
+    color:orangered;
+}
+
+.btn-title::after{
+    display: block;
+    content: '';
+    clear:both;
+}
+
+/* 专家审批 */
+table tbody td .operation_tag{
+    display:inline-block;
+    width:30%;
+    text-align:center;
+    background:rgb(195,213,229);
+    height:40px;
+    text-decoration: none !important;
+    line-height:40px;
+    margin:0;
+}
+
+table tbody td .inspector{
+    width:70%;
+    text-decoration: none !important;
+    margin:0;
+}
+table tbody td .inspector span{
+    text-decoration: none !important;
+    margin:0;
+}
+
+/* 更改结论模态框 */
+.conclusion-change,.conclusion-change-1{
+    margin-bottom:1rem;
+}
+
+.conclusion-change-btn{
+    margin-right:8px;
+}
+
+.conclusion-change-btn~a{
+    margin-right:8px;
+}
+
+.psf-function-btnbox{
+    text-align:right;
+    margin:2rem 0;
+}
+
+.batch_num span{
+    color:orangered;
+}
+/* 更改结论弹出框 */
+.el-dialog__body div label{
+    width:126px;
+}
+
+.el-dialog__body .conclusion-change-2 textarea{
+    margin-left:8px;
+}
+
+.ccid-workflow-table tbody td{
+    border:none !important;
+}
+
+.ccid-workflow-table tbody td a{
+    color:#0066cc;
+    text-decoration: underline;
+}
+
+.ccid-workflow-table tbody td.ccid-workflow-table-inspect{
+    padding-left:3%;
+    text-align: left;
+}
+
+/* 流程 */
+.ccid_progress_step{
+    text-align:center;
+}
+
+.ccid_progress_step *{
+    transition:all .3s ease;
+}
+
+.ccid_progress_step .outer-circle{
+    width:50px;
+    height:50px;
+    margin:0 auto;
+    position: relative;
+    line-height: 50px;
+    background-color:rgb(205,205,205);
+    border-radius: 50%;
+}
+
+.ccid_progress_step .outer-circle .inner-circle{
+    width:36px;
+    height:36px;
+    margin:auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:rgb(154,154,154);
+    border-radius: 50%;
+}
+
+.ccid_progress_line{
+    width:3px;
+    opacity: .9;
+    height:40px;
+    margin:0 auto;
+    background-color:rgb(154,154,154);;
+}
+
+.ccid_progress_step .outer-circle .inner-circle .innerText{
+    font-size:30px;
+    color:white;
+}
+
+/* 流程完成的情况 */
+.fulfilled .outer-circle{
+    background-color:rgb(255,205,127) !important;
+}
+.fulfilled .inner-circle{
+    background-color:#FF9900 !important;
+}
+
+.fulfilled.ccid_progress_line{
+    background-color:#FF9900 !important;
+}
+
+.fulfilled.ccid_confirm span{
+    color:#FF9900 !important;
+}
+
+.ccid_conter_apply.fulfilled{
+    transition: all .3s ease;
+    background-color:bisque !important;
+    border:1px solid #FF9900 !important;
+}
+
+.ccid_conter.fulfilled{
+    transition: all .3s ease;
+    background-color:bisque !important;
+    border:1px solid #FF9900 !important;
+}
+
+.ccid_conter.fullfilled th{
+    transition: all .3s ease;
+    border-bottom:#FF9900 !important;
+}
+
+/* 装备中心申诉登记表 */
+.by_content .title-blue{
+    font-size:14px;
+    font-weight:bold;
+    background:#d2e0ed;
+    color: #47627a;
+}
+
+.by_content .table-border-blue td{
+    border:1px solid #b3c4d4 !important;
+}
